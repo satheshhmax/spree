@@ -1,8 +1,7 @@
 #language-bar,
 #login-nav,
 #store-nav {
-  float: right;
- 	margin-top: 10px;}
+  float: right; }
   #language-bar li,
   #login-nav li,
   #store-nav li {
@@ -32,7 +31,6 @@ p.help-text {
 
 
 
-
 body {
   background-color: #162F54;
   color: #476D9B; }
@@ -43,7 +41,7 @@ body {
       color: #4884BD; }
   #header,
   #footer {
-		position: relative;
+    padding: 1em 1em 0;
     clear: both; }
   #content {
     margin: 0em 1em 1em 1em;
@@ -129,10 +127,10 @@ body {
             color: #fff; }
   h1.logo {
     float: left;
-    margin: 20px 10px 10px 10px;	 }
+    margin: 10px; }
     h1.logo a {
-      background: url(../../images/admin/bg/spree_50.png) left center no-repeat;
-      padding-left: 120px;
+      /*background: url(../../images/admin/bg/spree_50.png) left center no-repeat;
+      padding-left: 120px;*/
       display: block;
       height: 50px;
       text-decoration: none;
@@ -141,7 +139,7 @@ body {
   #admin-menu { clear: both; }
   #admin-menu,
   #sub-menu {
-    margin: 0 1em; 
+    margin: 0 1em;
     }
     #admin-menu li {
 
@@ -167,7 +165,7 @@ body {
           outline: none; }
         #admin-menu ul li.selected a,
         #sub-menu ul li.selected a {
-          background-color: #0095da; 
+          background-color: #0095da;
           }
         #admin-menu ul li.selected {
           border-bottom:1px solid #0095DA;
@@ -178,7 +176,7 @@ body {
     background: #154e8c url(../../images/admin/bg/admin_tab_back.png) top left repeat-x;
     border-top: 1px solid #4B83E2;
     border-right: 1px solid #34599B;
-    border-bottom: 1px solid #41A6F0; 
+    border-bottom: 1px solid #41A6F0;
     }
     #admin-menu ul {
       margin-bottom: -1px; }
@@ -394,57 +392,35 @@ body {
 	padding-top: 10px;
 	text-align: right;
 }
-a.page, span.page {  
-	padding: 0px 5px; 
+a.page, span.page {
+	padding: 0px 5px;
 	margin: 0 3px;
 }
-a.page {  	  
-	text-decoration: none;  
+a.page {
+	text-decoration: none;
 	border: 1px solid #9aafe5;
-	color: #2e6ab1;	
+	color: #2e6ab1;
 }
-a.page:hover, a.page:active {  
+a.page:hover, a.page:active {
 	border: 1px solid #2b66a5;
 	color: #000;
-	background-color: LightYellow;	
-} 
+	background-color: LightYellow;
+}
 
 a.next_page {
 	font-weight: bold;
 }
 
 
-span.disabled_page {  
+span.disabled_page {
 	border: 1px solid #929292;
 	color: #929292;
-} 
+}
 
-span.current_page {  
+span.current_page {
 	font-weight: bold;
 	border: 1px solid navy;
 	background-color: #2e6ab1;
 	color: #FFF;
-}                  
+}
 
-div#calculator-settings-warning {
- color: #f00;
-}
-#progress{
-	display:none;
-	background:#154E8C url(../../images/admin/bg/admin_tab_back.png) repeat-x scroll left top;
-	color:#fff;
-	font-size:170%;
-	height:25px;
-	left:33%;
-	padding:10px 0 15px;
-	position:absolute;
-	text-align:center;
-	width:33%;
-	font-weight:bold;
-	-moz-border-radius-bottomleft:15px;
-	-moz-border-radius-bottomright:15px;
-}
-#progress img{
-	vertical-align:middle;
-	padding-right:10px;
-}

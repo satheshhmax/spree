@@ -3,22 +3,28 @@
   :margin 0 0 1.5em -15px
   li
     :margin 0
+    div
+      :width auto
+      :float left
+      :height 2.8em
+      :line-height 2.5em
     a
       :cursor pointer!important
       :text-decoration none
       :color #333
       :display block
       :line-height 2.5em
-      :padding-left 20px
-      :width 170px
+      :padding-left 10px
+      :width 140px
       :white-space nowrap
       :overflow hidden
+      :float left
     a:hover
       :background url(/images/menu-hover.png) right center no-repeat
   li.current
     :width 200px
     a
-      :width 180px
+      :width 140px
       :background url(/images/menu-current.png) right center no-repeat
       :white-space nowrap
       :overflow hidden
@@ -29,6 +35,7 @@
     :font-size 1.5em
     :text-indent -5px
     :line-height 2.2em
+    :float none     
 
 .breadcrumbs
   :margin-bottom 1em
@@ -54,20 +61,19 @@ ul#language-bar
   strong
     :font-weight normal
 ul#nav-bar
-  :line-height 50px
-  :float right
+  :line-height 2em
   :clear both
   :font-size 1.2em
   :list-style none
   +no_margin_or_padding
   li
-    :float left
-    :margin-left 1em
+    :float none
+    :margin-left 0em
     &.cart-indicator
-      a 
+      a
         :display block
-        :padding-right 40px
-        :background transparent url(/images/cart-empty_x32.png) center right no-repeat
+        :padding-left 40px
+        :background transparent url(/images/cart-empty_x32.png) center left no-repeat
         &.full
           :background-image url(/images/cart-full_x32.png)
 
@@ -95,3 +101,4 @@ ul#nav-bar
     :border-color = !dark_blue
     :background-color = !medium_blue
     :color = !white
+

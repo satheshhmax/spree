@@ -4,24 +4,13 @@
     +no-bullets
     +no_margin_or_padding
 #product-images
-  +column(7)
-  h4
-    :padding 6px 0px
-    :margin 0px
-    :font-weight bold
-    :clear both
-  #main-image
-    :min-height 250px
-    :position relative
-    img
-      :position absolute
-      :top 0
-      :bottom 0
-      :left 0
-      :right 0
-      :margin auto
+  +column(6.5)
+#product-properties  
+  +column(4.5)
 #product-description
-  +column(8)
+  +column(13.5,"last")
   +colborder
 #cart-form
-  +column(7,"last")
+  +column(7)
+#facebox #cart-form
+  :width 350px

@@ -1,0 +1,6 @@
+[submodule "vendor/extensions/promotions"]
+	path = vendor/extensions/promotions
+	url = git://github.com/paulcc/spree-promotions.git
+[submodule "vendor/extensions/titles"]
+	path = vendor/extensions/titles
+	url = git://github.com/eliotsykes/spree-titles.git
