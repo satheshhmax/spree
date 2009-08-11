@@ -40,13 +40,15 @@ Spree::Initializer.run do |config|
   config.gem 'mislav-will_paginate', :version => '~> 2.3.11', :lib => 'will_paginate', 
         :source => 'http://gems.github.com'
 
+  config.gem "newrelic_rpm"
 
   # Only load the plugins named here, in the order given. By default, all plugins 
   # in vendor/plugins are loaded in alphabetical order.
   # :all can be used as a placeholder for all plugins not explicitly named
   # config.plugins = [ :exception_notification, :ssl_requirement, :all ]
-  config.plugins = [ :all, :resource_controller, :extension_patches ] 
+  config.plugins = [:all, :resource_controller, :extension_patches ] 
   
+  config.extensions = [:russian_adaptation, :all, :ortomed] 
   # Add additional load paths for your own custom dirs
   # config.load_paths += %W( #{RAILS_ROOT}/extras )
 

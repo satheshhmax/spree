@@ -4,6 +4,10 @@
 .tree-spree ul { background-position:6px 1px; background-repeat:repeat-y; background-image:url("dot.gif"); }
 .tree-spree li { background-position:7px 16px; background-repeat:no-repeat; background-image:url("li.gif"); }
 .tree-spree li.last { background-position:5px top; background-repeat:no-repeat; background-image:url("lastli.gif"); }
+/*.tree-spree li li a, .tree-spree li li a:hover, .tree-spree li li a.clicked:hover, .tree-spree li li a.clicked {
+  background-image: none;
+  padding-left: 2px;
+}*/
 
 /* DOTS - RIGHT TO LEFT */
 .tree-spree .rtl, .tree-spree .rtl ul { background-position:right 1px; }
@@ -37,3 +41,4 @@
 .tree-spree-context a:hover { background-color:#e7f4f9; border:1px solid #d8f0fa; padding:0 0 0 25px; margin:0; }
 .tree-spree-context a.disabled, .tree-spree-context a.disabled:hover { color:silver; opacity:0.5; -ms-filter:'alpha(opacity=50)'; filter:alpha(opacity=50); zoom:1; }
 .tree-spree-context .separator { background:#FFFFFF;border-top:1px solid #E0E0E0;font-size:1px;height:1px;line-height:1px;margin:0 2px 0 24px;min-height:1px;display:block; }
+
