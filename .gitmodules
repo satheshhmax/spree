@@ -4,3 +4,12 @@
 [submodule "vendor/extensions/titles"]
 	path = vendor/extensions/titles
 	url = git://github.com/eliotsykes/spree-titles.git
+[submodule "vendor/extensions/static_content"]
+	path = vendor/extensions/static_content
+	url = git@github.com:romul/spree-static-content.git
+[submodule "vendor/extensions/short_news"]
+	path = vendor/extensions/short_news
+	url = git@github.com:romul/spree-short-news.git
+[submodule "vendor/extensions/search"]
+	path = vendor/extensions/search
+	url = git@github.com:romul/spree-search.git
