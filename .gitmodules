@@ -13,3 +13,6 @@
 [submodule "vendor/extensions/search"]
 	path = vendor/extensions/search
 	url = git@github.com:romul/spree-search.git
+[submodule "vendor/extensions/product_lightbox"]
+	path = vendor/extensions/product_lightbox
+	url = git@github.com:romul/spree-product-lightbox.git
