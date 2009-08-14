@@ -16,3 +16,6 @@
 [submodule "vendor/extensions/product_lightbox"]
 	path = vendor/extensions/product_lightbox
 	url = git@github.com:romul/spree-product-lightbox.git
+[submodule "vendor/extensions/advanced_taxon"]
+	path = vendor/extensions/advanced_taxon
+	url = git@github.com:romul/spree-advanced-taxon.git
