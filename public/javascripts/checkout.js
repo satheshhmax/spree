@@ -282,7 +282,7 @@ var update_shipping_methods = function(methods) {
   $(methods).each( function(i) {
     $('div$methods img#shipping_loader').remove();
     var p = document.createElement('p');
-    var s = this.name;// + ' ' + this.rate;
+    var s = this.name + ' ' + this.rate;
     var i = $(document.createElement('input'))
                 .attr('id', this.id)
                 .attr('type', 'radio')
