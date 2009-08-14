@@ -126,11 +126,7 @@ var handle_delete = function(li, tree, rb){
 
 function show_adv_edit_taxon_form(taxon_id)
 {
-   /* form = jQuery("#adv_edit form");
-    form.attr("action", "/admin/taxons/adv_edit/" + taxon_id);
-    jQuery("#adv_edit").show();
-    jQuery("#adv_edit").set('margin-top', '250px');*/
-    window.location.replace("/admin/taxons/adv_edit/" + taxon_id)
+    window.location.replace("/admin/taxons/" + taxon_id + "/advanced/edit/" )
 }
 
 
