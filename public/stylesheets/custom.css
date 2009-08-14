@@ -51,6 +51,12 @@
 	height:0;
 }
 
+div#checkout div#registration div.error, div#checkout div#shipping_method div.error {
+    width: auto;
+}
+
+#checkout-summary { display: none; }
+ 
 .navigation-list li div.cat_icon {
 	width: 33px;
 	text-align: center;
