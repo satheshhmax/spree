@@ -48,7 +48,7 @@ Spree::Initializer.run do |config|
   # config.plugins = [ :exception_notification, :ssl_requirement, :all ]
   config.plugins = [:all, :resource_controller, :extension_patches ] 
   
-  config.extensions = [:russian_adaptation, :all, :ortomed] 
+  config.extensions = [:static_content, :russian_adaptation, :all, :ortomed] 
   # Add additional load paths for your own custom dirs
   # config.load_paths += %W( #{RAILS_ROOT}/extras )
 
