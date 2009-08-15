@@ -49,8 +49,7 @@ public/images/lightbox
 public/stylesheets/lightbox.css
 vendor/extensions/google_base
 vendor/extensions/ortomed
-vendor/extensions/extended_taxon
-vendor/extensions/russian_adaptation
+db/data.yml
 public/stylesheets/google_base.css
 public/google_base.xml
 public/template_google_base.xml
@@ -58,3 +57,4 @@ coverage/*
 var
 TAGS
 nbproject
+
