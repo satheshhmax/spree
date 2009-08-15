@@ -19,3 +19,6 @@
 [submodule "vendor/extensions/advanced_taxon"]
 	path = vendor/extensions/advanced_taxon
 	url = git@github.com:romul/spree-advanced-taxon.git
+[submodule "vendor/extensions/russian_adaptation"]
+	path = vendor/extensions/russian_adaptation
+	url = git@github.com:romul/spree-russian-adaptation.git
