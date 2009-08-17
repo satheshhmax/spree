@@ -171,3 +171,6 @@
 	cursor: pointer;
 }
 
+div#gallery ul { list-style: none; }
+div#gallery ul li { display: inline; }
+
