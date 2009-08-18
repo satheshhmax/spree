@@ -49,6 +49,8 @@ public/images/lightbox
 public/stylesheets/lightbox.css
 vendor/extensions/google_base
 vendor/extensions/ortomed
+public/javascripts/init.ujs.js
+public/stylesheets/custom.css
 db/data.yml
 public/stylesheets/google_base.css
 public/google_base.xml
