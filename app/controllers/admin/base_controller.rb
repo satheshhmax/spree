@@ -10,8 +10,8 @@ class Admin::BaseController < Spree::BaseController
 
 private
   def parse_date_params
-    dates = [] 
-    if (params[object_name])       
+    dates = []
+    if (self.respond_to?('object_name') && params[object_name])
       params[object_name].each do |k, v|
         if k =~ /\(\di\)$/
           param_name = k[/^\w+/]
@@ -21,7 +21,7 @@ private
       if (dates.size > 0)
         dates.uniq.each do |date|
           params[object_name][date] = [params[object_name].delete("#{date}(2i)"), params[object_name].delete("#{date}(3i)"), params[object_name].delete("#{date}(1i)")].join('/')
-        end    
+        end
       end
     end
   end
@@ -37,7 +37,7 @@ private
   def add_shipments_tab
     @order_admin_tabs << {:name => 'Shipments', :url => "admin_order_shipments_url"}
   end
-  
+
   #used to add tabs / partials to product admin interface
   def initialize_product_admin_tabs
     @product_admin_tabs = []
@@ -48,3 +48,4 @@ private
     @order_admin_tabs = []
   end
 end
+
