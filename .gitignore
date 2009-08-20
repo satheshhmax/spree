@@ -52,6 +52,9 @@ vendor/extensions/ortomed
 public/javascripts/init.ujs.js
 public/stylesheets/custom.css
 db/data.yml
+Thumbs.db
+ie*.css
+logo.png
 public/stylesheets/google_base.css
 public/google_base.xml
 public/template_google_base.xml
