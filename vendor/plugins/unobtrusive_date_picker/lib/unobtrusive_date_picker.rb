@@ -86,6 +86,7 @@ module UnobtrusiveDatePicker
     def unobtrusive_datepicker_includes(options = {})
       tags = []
       tags << javascript_include_tag('datepicker', options)
+      tags << javascript_include_tag("lang/#{I18n.locale.to_s[0..1]}", options)
       tags << stylesheet_link_tag('datepicker', options)
       tags * "\n"
     end
