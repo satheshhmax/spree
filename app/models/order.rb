@@ -29,6 +29,7 @@ class Order < ActiveRecord::Base
   has_many :tax_charges,      :extend => Totaling, :order => :position,
     :class_name => "Charge", :conditions => {:secondary_type => "TaxCharge"}
   has_many :credits,          :extend => Totaling, :order => :position
+  has_many :coupon_credits, :class_name => "Credit", :extend => Totaling, :conditions => {:adjustment_source_type => "Coupon"}, :order => :position
 
   accepts_nested_attributes_for :checkout
   
@@ -116,7 +117,9 @@ class Order < ActiveRecord::Base
       current_item.quantity = (current_item.quantity + quantity) if quantity > 1
       current_item.save
     else
-      current_item = LineItem.new(:quantity => quantity, :variant => variant, :price => variant.price)
+      current_item = LineItem.new(:quantity => quantity)
+      current_item.variant = variant
+      current_item.price   = variant.price
       self.line_items << current_item
     end
     
