@@ -51,6 +51,8 @@ vendor/extensions/google_base
 vendor/extensions/ortomed
 public/images/*
 public/javascripts/init.ujs.js
+public/javascripts/thickbox.js
+public/javascripts/nf.lightbox.js
 public/stylesheets/custom.css
 public/stylesheets/admin.custom.css
 public/stylesheets/admin/*
