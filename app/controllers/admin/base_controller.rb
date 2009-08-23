@@ -10,18 +10,23 @@ class Admin::BaseController < Spree::BaseController
 
 private
   def parse_date_params
+    params.each do |k, v|
+      parse_date_params_for(v) if v.is_a?(Hash)
+    end
+  end
+
+  def parse_date_params_for(hash)
     dates = []
-    if (self.respond_to?('object_name') && params[object_name])
-      params[object_name].each do |k, v|
-        if k =~ /\(\di\)$/
-          param_name = k[/^\w+/]
-          dates << param_name
-        end
+    hash.each do |k, v|
+      parse_date_params_for(v) if v.is_a?(Hash)
+      if k =~ /\(\di\)$/
+        param_name = k[/^\w+/]
+        dates << param_name
       end
-      if (dates.size > 0)
-        dates.uniq.each do |date|
-          params[object_name][date] = [params[object_name].delete("#{date}(2i)"), params[object_name].delete("#{date}(3i)"), params[object_name].delete("#{date}(1i)")].join('/')
-        end
+    end
+    if (dates.size > 0)
+      dates.uniq.each do |date|
+        hash[date] = [hash.delete("#{date}(2i)"), hash.delete("#{date}(3i)"), hash.delete("#{date}(1i)")].join('/')
       end
     end
   end
