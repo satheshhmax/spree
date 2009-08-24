@@ -1,7 +1,7 @@
 // Place your application-specific JavaScript functions and classes here
 // This file is automatically included by javascript_include_tag :defaults
 
-var shipping_costs = new Hash();
+var shipping_costs = {};
 
 function calculate_order_total(radio){
 	$('order_total_cell').update(number_to_currency(order_total_without_shipping + shipping_costs.get(radio.value)));
