@@ -4,3 +4,21 @@
 [submodule "vendor/extensions/titles"]
 	path = vendor/extensions/titles
 	url = git://github.com/eliotsykes/spree-titles.git
+[submodule "vendor/extensions/static_content"]
+	path = vendor/extensions/static_content
+	url = git://github.com/romul/spree-static-content.git
+[submodule "vendor/extensions/short_news"]
+	path = vendor/extensions/short_news
+	url = git://github.com/romul/spree-short-news.git
+[submodule "vendor/extensions/search"]
+	path = vendor/extensions/search
+	url = git://github.com/romul/spree-search.git
+[submodule "vendor/extensions/product_lightbox"]
+	path = vendor/extensions/product_lightbox
+	url = git://github.com/romul/spree-product-lightbox.git
+[submodule "vendor/extensions/advanced_taxon"]
+	path = vendor/extensions/advanced_taxon
+	url = git://github.com/romul/spree-advanced-taxon.git
+[submodule "vendor/extensions/russian_adaptation"]
+	path = vendor/extensions/russian_adaptation
+	url = git://github.com/romul/spree-russian-adaptation.git
