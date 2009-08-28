@@ -72,10 +72,13 @@ Spree::Initializer.run do |config|
   config.i18n.default_locale = :'en-US'    
 
   config.active_record.observers = :order_observer
+  
+  config.cache_store = :file_store, "#{RAILS_ROOT}/cache/" #:mem_cache_store #
 end
 
 Time::DATE_FORMATS[:date_time24] = "%Y-%m-%d %H:%M"
 Time::DATE_FORMATS[:short_date] = "%Y-%m-%d"
+
 
 # Add new inflection rules using the following format
 # (all these examples are active by default):
