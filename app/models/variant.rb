@@ -73,7 +73,7 @@ class Variant < ActiveRecord::Base
 
   # returns true if this variant is allowed to be placed on a new order
   def available?
-    self.in_stock? || Spree::Config[:allow_backorders]
+    Spree::Config[:allow_backorders] || self.in_stock?
   end
 	
 	def options_text

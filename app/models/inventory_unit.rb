@@ -65,7 +65,7 @@ class InventoryUnit < ActiveRecord::Base
   
   private
   def allow_ship?
-    state == 'ready_to_ship' || Spree::Config[:allow_backorder_shipping]
+    Spree::Config[:allow_backorder_shipping] || (state == 'ready_to_ship')
   end
   
 end
