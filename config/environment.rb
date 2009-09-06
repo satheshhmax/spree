@@ -36,7 +36,7 @@ Spree::Initializer.run do |config|
   config.gem 'rsl-stringex', :lib => 'stringex', :source => "http://gems.github.com"
   config.gem 'chronic' #required for whenever
   config.gem 'javan-whenever', :lib => false, :source => 'http://gems.github.com'
-  config.gem 'searchlogic', :version => '2.1.13'
+  config.gem 'searchlogic', :version => '>=2.3.3'
   config.gem 'mislav-will_paginate', :version => '~> 2.3.11', :lib => 'will_paginate',
         :source => 'http://gems.github.com'
 
