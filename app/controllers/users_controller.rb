@@ -37,4 +37,11 @@ class UsersController < Spree::BaseController
     end
   end
 
+  private
+  
+  def object
+    @user = @current_user if @current_user
+    @user
+  end
+
 end
