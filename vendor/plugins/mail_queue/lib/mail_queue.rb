@@ -1,5 +1,7 @@
 # MailQueue
 
+=begin
+  
 module ActionMailer
   class Base
     
@@ -31,6 +33,7 @@ module ActionMailer
   end
 end
 
+=end
 
 class MailQueue < ActiveRecord::Base
   
