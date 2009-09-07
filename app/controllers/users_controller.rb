@@ -37,4 +37,13 @@ class UsersController < Spree::BaseController
     end
   end
 
+  private
+  
+  def object    
+    @user = User.new(params[:user]) if params[:user]
+    @user ||= @current_user
+    @user ||= User.new
+    @user
+  end
+
 end
