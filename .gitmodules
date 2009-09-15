@@ -22,3 +22,6 @@
 [submodule "vendor/extensions/russian_adaptation"]
 	path = vendor/extensions/russian_adaptation
 	url = git://github.com/romul/spree-russian-adaptation.git
+[submodule "vendor/plugins/active_merchant"]
+	path = vendor/plugins/active_merchant
+	url = git://github.com/parallel588/active_merchant.git
